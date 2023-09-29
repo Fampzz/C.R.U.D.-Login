@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+.backgound{
+    background-color: #007bff; /* Cor de fundo da div */
+    filter: blur(10px); /* Valor do desfoque em pixels */
+}
+.background {
+position: absolute;
+z-index: 0;
+   width: 100%;
+    height: 100%;   
+    animation: backgroundAnimation 2s infinite alternate;   
+}
+
+.tower {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    animation: towerAnimation 3s infinite alternate;
+    width: 100%;
+    height: 100%; 
+}
+
+.map {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: 100%; 
+}
+.shrun{
+    position: absolute;
+    top: 42%;
+    z-index: 3;
+    width: 10rem;
+    height: 10rem;
+    animation: shrunAnimation 8s infinite ease-in-out;
+}
+.sh{
+    position: absolute;
+    top: 58%;
+    z-index: 3;
+    width: 10rem;
+    height: 10rem;
+    animation: shAnimation 1s infinite;
+    
+    background-size: cover;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1rem;
+    z-index: 3;
+    width: 25rem;
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.login h1{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.login-box-input, .login-box-button{
+    text-align: center;
+}
+
+.login-box-input{
+    margin-bottom: 1rem;
+}
+.login-box-input input{
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-box-input input:focus{
+    border: 3px solid #df1515;
+}   
+
+.login-box-button button{
+    width: 12.3rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: #000000;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+.login-box-button button:hover{
+    border: 3px solid #df1515;
+    background-color: #df1515;
+    cursor: pointer;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        transform: translateX(-3px);
+    }
+    100% {
+        transform: translateX(3px);
+    }
+}
+
+@keyframes towerAnimation {
+    0% {
+        left: -1rem;
+    }
+    100% {
+        left: 1rem;
+    }
+}
+@keyframes shrunAnimation {
+    0% {
+        transform: translatex(-10rem)
+    }
+    100% {
+        transform: translatex(95rem)
+    }
+}
+@keyframes shAnimation {
+    0% {
+       
+        background-image: url("assets/img/shadow/sh1.png");
+    }
+    6% {
+        background-image: url("assets/img/shadow/sh2.png");
+    }
+    12% {
+        background-image: url("assets/img/shadow/sh3.png");
+    }
+    18% {
+        background-image: url("assets/img/shadow/sh4.png");
+    }
+    24% {
+        background-image: url("assets/img/shadow/sh6.png");
+    }
+    30% {
+        background-image: url("assets/img/shadow/sh4.png");
+    }
+    36% {
+        background-image: url("assets/img/shadow/sh7.png");
+    }
+    42% {
+        background-image: url("assets/img/shadow/sh8.png");
+    }
+    48% {
+        background-image: url("assets/img/shadow/sh9.png");
+    }
+    54% {
+        background-image: url("assets/img/shadow/sh10.png");
+    }
+    60% {
+        background-image: url("assets/img/shadow/sh11.png");
+    }
+    66% {
+        background-image: url("assets/img/shadow/sh12.png");
+    }
+    72% {
+        background-image: url("assets/img/shadow/sh13.png");
+    }
+    78% {
+        background-image: url("assets/img/shadow/sh14.png");
+    }
+    85% {
+        background-image: url("assets/img/shadow/sh15.png");
+    }
+    93% {
+        background-image: url("assets/img/shadow/sh16.png");
+    }
+    100% {
+       
+        background-image: url("assets/img/shadow/sh17.png");
+    }
+
+}
+
